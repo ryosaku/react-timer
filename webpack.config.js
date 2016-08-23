@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/timer.js',
+  entry: './src',
   output: {
     path: './public',
     filename: 'bundle.js'       

@@ -1,12 +1,12 @@
 {
   "name": "react-timer",
   "version": "1.0.0",
-  "description": "Timer",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "webpack-watch": "webpack -w",
     "express-server": "node ./server",
-    "dev": "\"npm run express-server\"",
+    "dev": "concurrent --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -20,9 +20,12 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.11.6",
+    "css-loader": "^0.23.1",
     "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2"
   },
   "devDependencies": {
